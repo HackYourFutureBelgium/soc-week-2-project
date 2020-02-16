@@ -13,6 +13,7 @@ console.assert(devowel('AaEeIiOoUuAaEeIiOoUu') === '', 'fifth');
 
 
 function devowelHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userText = prompt('enter some text');
 

@@ -4,10 +4,10 @@ console.log('tempConverter script has loaded');
 function tempConverter(temperature, degrees) {
 }
 
-// if the user wants to convert to farenheit
-console.assert(tempConverter(53, 'farenheit') === 127.4, 'first');
-console.assert(tempConverter(0, 'farenheit') === 32, 'second');
-console.assert(tempConverter(-40, 'farenheit') === -40, 'third');
+// if the user wants to convert to fahrenheit
+console.assert(tempConverter(53, 'fahrenheit') === 127.4, 'first');
+console.assert(tempConverter(0, 'fahrenheit') === 32, 'second');
+console.assert(tempConverter(-40, 'fahrenheit') === -40, 'third');
 
 // if the user wants to convert to celcius
 console.assert(tempConverter(0, 'celcius') === 32, 'fourth');
@@ -17,14 +17,15 @@ console.assert(tempConverter(12.4, 'celcius') === 54.32, 'sixth');
 // if the user inputs an invalid degree
 console.assert(tempConverter(34, 'toad') === 'toad is not supported', 'seventh');
 console.assert(tempConverter(2.5, '') === ' is not supported', 'eighth');
-console.assert(tempConverter(500, 'Farenheit') === 'Farenheit is not supported', 'ninth');
+console.assert(tempConverter(500, 'Fahrenheit') === 'Fahrenheit is not supported', 'ninth');
 
 
 function tempConverterHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userTempStr = prompt('enter a temperature to convert');
   // cast userDegreesStr to a Number, and assign the value to userDecrees
-  const userDegrees = prompt('would you like to convert to farenheit or celcius?');
+  const userDegreesStr = prompt('would you like to convert to fahrenheit or celcius?');
 
   console.assert(typeof userDegrees === 'number', "don't forget to cast userDegrees to a string!");
 

@@ -12,6 +12,7 @@ console.assert(repeater('', 4) === '\n\n\n\n', 'fifth');
 
 
 function repeaterHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userPhrase = prompt('enter a phrase');
   const userNumStr = prompt('enter a num');

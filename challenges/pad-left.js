@@ -16,6 +16,7 @@ console.assert(padLeft('computers', 10) === '-computers', 'sixth');
 
 
 function padLeftHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userString = prompt('enter a string to pad');
 

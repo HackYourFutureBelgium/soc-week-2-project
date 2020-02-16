@@ -17,6 +17,7 @@ console.assert(madlib('car', 'migrate', 'scratchy') === 'when the scratchy rain 
 
 
 function madlibHandler() {
+  debugger;
   // prompt the user for a noun, verb and adjective
   const userNoun = prompt('enter a noun');
   const userVerb = prompt('enter a verb');
