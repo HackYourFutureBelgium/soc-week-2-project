@@ -10,9 +10,9 @@ console.assert(tempConverter(0, 'fahrenheit') === 32, 'second');
 console.assert(tempConverter(-40, 'fahrenheit') === -40, 'third');
 
 // if the user wants to convert to celsius
-console.assert(tempConverter(0, 'celsius') === 32, 'fourth');
-console.assert(tempConverter(4, 'celsius') === 39.2, 'fifth');
-console.assert(tempConverter(12.4, 'celsius') === 54.32, 'sixth');
+console.assert(tempConverter(5, 'celsius') === -15, 'fourth');
+console.assert(tempConverter(-4, 'celsius') === -20, 'fifth');
+console.assert(tempConverter(12.2, 'celsius') === -11, 'sixth');
 
 // if the user inputs an invalid degree
 console.assert(tempConverter(34, 'toad') === 'toad is not supported', 'seventh');
