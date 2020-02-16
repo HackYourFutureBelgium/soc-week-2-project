@@ -27,7 +27,7 @@ function tempConverterHandler() {
   // cast userDegreesStr to a Number, and assign the value to userDecrees
   const userDegreesStr = prompt('would you like to convert to fahrenheit or celsius?');
 
-  console.assert(typeof userDegrees === 'number', "don't forget to cast userDegrees to a string!");
+  console.assert(typeof userDegrees === 'number', "don't forget to cast userDegrees to a number!");
 
   // perform core logic
   // write this line!
