@@ -1,9 +1,17 @@
 console.log('madlib script has loaded');
 
 // write this function!
-function madlib() {
+function madlib(Noun,Verb, Adjective) { if (Noun.length>Verb.length) 
+  { text= 'the '+ Adjective+' '+ Noun+ ' loves to '+ Verb+ ' in the summer';
+}
+else if (Verb.length > Noun.length){
+  text = 'when the '+ Adjective+ ' rain falls, '+ Noun + ' begins to '+ Verb;
+}
+return text;
 
 }
+
+
 
 // if the noun is longer than the verb
 console.assert(madlib('horse', 'walk', 'red') === 'the red horse loves to walk in the summer', 'first');

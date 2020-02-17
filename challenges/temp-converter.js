@@ -1,7 +1,16 @@
 console.log('tempConverter script has loaded');
 
 // write this function!
-function tempConverter(temperature, degrees) {
+function tempConverter(temperature, degrees) {if (temperature === 'celcius') {
+  result = (degrees *9/5+32;
+   
+} else if (temperature === 'farenheit') {
+  result = (degrees -32)*5/9;
+   
+} else {
+  return degrees + ' is not supported';
+}
+  return result; 
 }
 
 // if the user wants to convert to fahrenheit
